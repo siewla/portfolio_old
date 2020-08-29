@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.nav {
+  background-color: palevioletred;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.15);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-logo {
+  color: white;
+  font-size: 5vh
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-logo:hover {
+  cursor: pointer;
+}
+
+.nav .nav-content {
+  max-width: 900px;
+  padding: 0rem 3rem;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  display: inline;
+  margin-left: 2rem;
+  color: #333;
+}
+
+.nav-item:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.section-content {
+  margin: auto;
+}
+
+.introduction{
+  height: 100vh;
+  background-color: black;
+  color: white
+}
+
+.name-text{
+  color: lightseagreen;
+}
+
+.introduction-content{
+  height: 100%;
+  margin-top:80px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2vh;
+}
+
+.flex-column-center{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Typewriter__wrapper{
+  color:palevioletred;
+  font-size: 3vh;
+}
+
+.Typewriter__cursor{
+  color: white;
+  font-size: 3vh;
+}
+
+.learn-more{
+  animation: text-jumping 1.5s ease-in-out infinite;
+}
+
+.learn-more:hover {
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+.about{
+  background-color:white;
+  color: black;
+  min-height: 100vh;
+}
+
+.projects{
+  display:flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: whitesmoke;
+  color: black;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.contact{
+  background-color: white;
+  color: black;
+  min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.contact-container{
+  width: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color:black;
+  padding: 2vh; 
+}
+
+.contact-icon{
+  color: palevioletred;
+  font-size: 4vh;
+}
+
+@keyframes text-jumping {
+  0% {
+      transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  20% {
+      transform: translateY(-1em);
+  }
+  40% {
+      transform: translateY(0.5em);
+  }
+  60% {
+      transform: translateY(-0.25em);
+  }
+  80% {
+      transform: translateY(0);
   }
 }
