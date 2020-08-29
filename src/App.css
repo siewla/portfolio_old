@@ -16,7 +16,7 @@ body{
 }
 
 .nav {
-  background-color: palevioletred;
+  background-color: black;
   position: fixed;
   top: 0;
   height: 80px;
@@ -46,12 +46,12 @@ body{
 .nav-item {
   display: inline;
   margin-left: 2rem;
-  color: #333;
+  color: white;
   font-size: 3vh;
 }
 
 .nav-item:hover {
-  color: white;
+  color: lightseagreen;
   cursor: pointer;
 }
 
@@ -147,19 +147,33 @@ body{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: black;
-  color:white;
+  background-color: white;
+  border: 1vh solid black;
+  color:black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 2vh;
   margin: 2vh;
 }
 
 .project-card-title{
-  color:palevioletred
+  text-decoration:none;
+  color:black;
+  font-size: 4vh;
+}
+
+.project-card-title:hover{
+  color: lightseagreen;
 }
 
 .project-description{
-  color:lightseagreen;
+  color:rgba(0, 0, 0, 0.8);
+}
+
+.horizontal-line{
+  height: 0.2vh;
+  width: 80%;
+  background-color: grey;
+
 }
 
 .project-card-image{
@@ -170,15 +184,16 @@ body{
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-.project-card-footer{
+.project-card-actions{
+  padding: 1vh;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .footer-text{
   text-decoration:none;
-  color:white;
+  color:black;
 }
 
 .footer-text:hover{
@@ -201,8 +216,12 @@ body{
 }
 
 .contact-icon{
-  color: palevioletred;
+  color: white;
   font-size: 4vh;
+}
+
+.contact-icon:hover{
+  color: lightseagreen;
 }
 
 @keyframes text-jumping {
