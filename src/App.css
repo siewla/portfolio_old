@@ -207,21 +207,60 @@ body{
   min-height: 100vh;
 }
 
-.contact-container{
-  width: 10%;
+.connect-with-me-container{
+  width: 80%;
   display: flex;
   justify-content: space-evenly;
-  background-color:black;
+  align-items: center;
+}
+
+.vertical-line{
+  width: .5vh;
+  height: 40vh;
+  background-color:gray;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: space-evenly;
   padding: 2vh; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact-icon{
-  color: white;
+  color: black;
   font-size: 4vh;
+  margin: 2vh;
 }
 
 .contact-icon:hover{
   color: lightseagreen;
+}
+
+.contact-form{
+  width: 30vh;
+  display:flex;
+  flex-direction: column;
+  padding: 2vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.message-textarea{
+  min-height: 20vh;
+}
+
+.send-button{
+  background-color:black;
+  color: white;
+  font-size: 2vh;
+  width: 10vh;
+  align-self: center;
+  margin: 2vh;
+}
+
+.send-button:hover{
+  background-color:lightseagreen;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
@@ -234,9 +273,6 @@ body{
     font-size: 3vh;
   }
 
-  .contact-container{
-    width: 20%;
-  }
 
   .introduction-background {
     background-image: none;
