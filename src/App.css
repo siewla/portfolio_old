@@ -45,7 +45,7 @@ body{
 
 .nav-item {
   display: inline;
-  margin-left: 2rem;
+  margin-left: 2vh;
   color: white;
   font-size: 3vh;
 }
@@ -223,6 +223,28 @@ body{
 .contact-icon:hover{
   color: lightseagreen;
 }
+
+@media only screen and (max-width: 600px) {
+  .nav-item {
+    margin-left: 1vh;
+    font-size: 2vh;
+  }
+
+  .Typewriter__wrapper{
+    font-size: 3vh;
+  }
+
+  .contact-container{
+    width: 20%;
+  }
+
+  .introduction-background {
+    background-image: none;
+    background-color: black;
+  }
+  
+}
+
 
 @keyframes text-jumping {
   0% {
