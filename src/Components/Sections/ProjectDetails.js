@@ -20,7 +20,7 @@ const  PROJECTS =[
         projectTitle : 'PinApps',
         projectDescription : 'This app serves to help its users organise and share the apps they commonly use.',
         projectImgLink : 'https://images.unsplash.com/photo-1569144157581-984dea473e3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-        projectDemoLink : 'https://pinapps.herokuapp.com/',
+        projectDemoLink : 'https://pinappsproject.herokuapp.com/',
         projectCodeLink : 'https://github.com/siewla/pinapps',
     },
     {
@@ -28,8 +28,8 @@ const  PROJECTS =[
         projectTitle : 'Sweet Accountant',
         projectDescription : 'final project',
         projectImgLink : 'https://images.unsplash.com/photo-1569144157581-984dea473e3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
-        projectDemoLink : '#',
-        projectCodeLink : '#',
+        projectDemoLink : 'https://sweetaccountant.herokuapp.com/',
+        projectCodeLink : 'https://github.com/siewla/sweet-accountant-frontend',
     },
 ]
 
