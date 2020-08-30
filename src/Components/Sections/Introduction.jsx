@@ -10,21 +10,25 @@ const Introduction = () => {
             <div className ="introduction-content">
                 <div className="flex-column-center">
                     <h1>Hi, my name is <span className="name-text">SiewLa</span>.</h1>
+                    <br/><br/>
                     <h1>I'm</h1>
-                    <Typewriter
-                        options={{
-                        strings: [
-                            'Full Stack Developer',
-                            'Software Engineer',
-                            'User-Centered Web Designer',
-                            'Mechanical Design Engineer',
-                            'Front-End Ninja',
-                            'Back-End Warrior'        
-                        ],
-                        autoStart: true,
-                        loop: true,
-                    }}
-                    />
+                    <div className="typewriter-container">
+                        <Typewriter
+                            options={{
+                            strings: [
+                                'Full Stack Developer',
+                                'Software Engineer',
+                                'User-Centered Web Designer',
+                                'Mechanical Design Engineer',
+                                'Front-End Ninja',
+                                'Back-End Warrior'        
+                            ],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                        />
+                    </div>
+                    
                 </div>
                 
                 <Link

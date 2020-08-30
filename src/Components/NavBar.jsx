@@ -1,16 +1,28 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
+import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse } from "mdbreact";
 
 const NavBar = () => {
+    const [isOpen, setIsOpen] = useState(false)  
+    
+    const toggleCollapse = () => {
+        setIsOpen(!isOpen)
+    }
+
     return (
-        <div>
-            <nav className="nav" id="navbar">
-                <div className="nav-content">
+        <MDBNavbar color="black" dark expand="md" scrolling fixed="top">
+            <MDBNavbarBrand>
                 <h1
                     className="nav-logo"
                     onClick={()=>{scroll.scrollToTop()}}
                 >SL</h1>
-                <ul className="nav-items">
+            </MDBNavbarBrand>
+            <MDBNavbarToggler onClick={toggleCollapse} />
+            <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
+                <MDBNavbarNav left>
+                </MDBNavbarNav>
+                <MDBNavbarNav right>
+                    <MDBNavItem>
                         <Link
                             className="nav-item"
                             activeClass="active"
@@ -20,6 +32,8 @@ const NavBar = () => {
                             offset={-80}
                             duration={500}
                         >Home</Link>
+                    </MDBNavItem>
+                    <MDBNavItem>
                         <Link
                             className="nav-item"
                             activeClass="active"
@@ -28,6 +42,8 @@ const NavBar = () => {
                             smooth={true}
                             duration={500}
                         >About</Link>
+                    </MDBNavItem>
+                    <MDBNavItem>
                         <Link
                             className="nav-item"
                             activeClass="active"
@@ -37,6 +53,8 @@ const NavBar = () => {
                             offset={-80}
                             duration={500}
                         >Projects</Link>
+                    </MDBNavItem>
+                    <MDBNavItem>
                         <Link
                             className="nav-item"
                             activeClass="active"
@@ -45,10 +63,11 @@ const NavBar = () => {
                             smooth={true}
                             duration={500}
                         >Contact</Link>
-                </ul>
-                </div>
-            </nav>
-        </div>
+                    </MDBNavItem>
+                </MDBNavbarNav>
+            </MDBCollapse>
+        </MDBNavbar>
+
     )
 }
 
