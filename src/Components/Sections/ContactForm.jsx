@@ -1,5 +1,8 @@
 import React from 'react'
 import emailjs from 'emailjs-com'
+import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn, MDBCard, MDBCardBody, MDBIcon} from 'mdbreact';
+
+
 
 const ContactForm = () => {
     const sendEmail=e=> {
@@ -13,17 +16,56 @@ const ContactForm = () => {
     }
 
     return (
-        <div>
-            <form className="contact-form" onSubmit={sendEmail}>
-                <label>Name</label>
-                <input type="text" name="user_name" required/>
-                <label>Email</label>
-                <input type="email" name="user_email" required/>
-                <label>Message</label>
-                <textarea className="message-textarea"name="message" required/>
-                <button className="send-button">Send</button>
-            </form>
-        </div>
+        <MDBContainer>
+            <MDBRow>
+                <MDBCol md="6">
+                <MDBCard>
+                    <MDBCardBody>
+                    <form onSubmit={sendEmail}>
+                        <div className="grey-text">
+                        <MDBInput
+                            name="user_name"
+                            label="Your name"
+                            icon="user"
+                            group
+                            type="text"
+                            validate
+                            error="wrong"
+                            success="right"
+                            required
+                        />
+                        <MDBInput
+                            name="user_email"
+                            label="Your email"
+                            icon="envelope"
+                            group
+                            type="email"
+                            validate
+                            error="wrong"
+                            success="right"
+                            required
+                        />
+                        <MDBInput
+                            type="textarea"
+                            name="message"
+                            label="Your Message"
+                            rows="5"
+                            icon="pencil-alt"
+                            required
+                        />
+                        </div>
+                        <div className="text-center py-4 mt-3">
+                            <MDBBtn className="btn btn-outline-black" type="submit">
+                                Send
+                                <MDBIcon far icon="paper-plane" className="ml-2" />
+                            </MDBBtn>
+                        </div>
+                    </form>
+                    </MDBCardBody>
+                </MDBCard>
+                </MDBCol>
+            </MDBRow>
+        </MDBContainer>
     )
 }
 
