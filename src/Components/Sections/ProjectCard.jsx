@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
             {/* <img className="project-card-image" src={projectImgLink} alt="project" /> */}
             <a href={projectDemoLink} className="project-card-title" target="popout">{projectTitle}</a>
             <div className="horizontal-line"></div>
-            <h4>Description : <span className="project-description">{projectDescription}</span></h4>
+            <h4 className="project-description">{projectDescription}</h4>
         </div>
     )
 }

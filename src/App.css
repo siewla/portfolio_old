@@ -153,6 +153,12 @@ body{
 
 .project-description{
   color:rgba(0, 0, 0, 0.8);
+  font-size: 2vh;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  padding: 1vh;
+  margin-top: 1vh;
+  text-align: center;
+  text-justify: auto;
 }
 
 .horizontal-line{
@@ -163,7 +169,7 @@ body{
 }
 
 .project-card-image{
-  border: 1vh solid white;
+  border: 1px dotted grey;
   width: 40vh;
   height: 30vh; 
   object-fit: cover;
