@@ -2,9 +2,8 @@ import React from 'react'
 import Introduction from './Sections/Introduction'
 import About from './Sections/About'
 import Projects from './Sections/Projects'
-import Contact from './Sections/Contact'
 import Expertise from './Sections/Expertise'
-
+import Contact from './Sections/Contact'
 
 const Section = (props) => {
     const sectionContent = () =>{

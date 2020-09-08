@@ -32,6 +32,9 @@ const App =() => {
           <Section
             id="section4"
           />
+          <Section
+            id="section5"
+          />
         </div>
     </ThemeProvider>
   );
