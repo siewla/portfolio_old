@@ -53,6 +53,7 @@ const NavBar = (props) => {
                             to="section3"
                             spy={true}
                             smooth={true}
+                            offset={-80}
                             duration={500}
                         >Expertise</Link>
                     </MDBNavItem>
