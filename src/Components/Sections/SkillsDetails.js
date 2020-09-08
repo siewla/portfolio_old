@@ -32,7 +32,7 @@ const SKILLS =[
     {
         id: '7',
         name: 'ReactJs',
-        logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/react.svg?raw=true'
+        logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/react.png?raw=true'
     },
     {
         id: '8',
