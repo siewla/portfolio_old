@@ -10,7 +10,7 @@ const  PROJECTS =[
     {
         id : '2',
         projectTitle : 'Ideagram',
-        projectDescription : 'This application acts as a visual discovery engine for finding ideas like countries, recipes, home and style inspiration, and many more.',
+        projectDescription : 'A full Stack application with Express JS (Node JS) and Template Engine (EJS). This application acts as a visual discovery engine for finding ideas like countries, recipes, home and style inspiration, and many more.',
         projectImgLink : 'https://github.com/siewla/portfolio/blob/master/src/assets/project2.png?raw=true',
         projectDemoLink : 'http://ideagram.herokuapp.com/',
         projectCodeLink : 'https://github.com/siewla/ideagram',
@@ -18,7 +18,7 @@ const  PROJECTS =[
     {
         id : '3',
         projectTitle : 'PinApps',
-        projectDescription : 'This app serves to help its users organise and share the apps they commonly use.',
+        projectDescription : 'MERN (MongoDB, React, Express and Node) Stack. This app serves to help its users organise and share the apps they commonly use.',
         projectImgLink : 'https://github.com/siewla/portfolio/blob/master/src/assets/project3.png?raw=true',
         projectDemoLink : 'https://pinappsproject.herokuapp.com/',
         projectCodeLink : 'https://github.com/siewla/pinapps',
@@ -26,7 +26,7 @@ const  PROJECTS =[
     {
         id : '4',
         projectTitle : 'Sweet Accountant',
-        projectDescription : 'final project',
+        projectDescription : 'NERDS (Node, Express, React, Database using SQL) stack. This app is a financial management app. This app also has charts and graphs which are extremely helpful in visualising your expenditure against your income.',
         projectImgLink : 'https://images.unsplash.com/photo-1569144157581-984dea473e3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
         projectDemoLink : 'https://sweetaccountant.herokuapp.com/',
         projectCodeLink : 'https://github.com/siewla/sweet-accountant-frontend',

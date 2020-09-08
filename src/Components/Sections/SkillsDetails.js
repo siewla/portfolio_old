@@ -14,16 +14,16 @@ const SKILLS =[
         name: 'CSS',
         logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/css.png?raw=true'
     },
-    {
-        id: '4',
-        name: 'MySQL',
-        logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/mysql.png?raw=true'
-    },
-    {
-        id: '5',
-        name: 'NoSQL',
-        logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/nosql.png?raw=true'
-    },
+    // {
+    //     id: '4',
+    //     name: 'MySQL',
+    //     logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/mysql.png?raw=true'
+    // },
+    // {
+    //     id: '5',
+    //     name: 'NoSQL',
+    //     logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/nosql.png?raw=true'
+    // },
     {
         id: '6',
         name: 'NodeJs',
