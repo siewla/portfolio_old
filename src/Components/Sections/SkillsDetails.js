@@ -16,8 +16,8 @@ const SKILLS =[
     },
     {
         id: '4',
-        name: 'SQL',
-        logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/sql.jpg?raw=true'
+        name: 'MySQL',
+        logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/mysql.png?raw=true'
     },
     {
         id: '5',
@@ -27,7 +27,7 @@ const SKILLS =[
     {
         id: '6',
         name: 'NodeJs',
-        logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/node.jpg?raw=true'
+        logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/node.png?raw=true'
     },
     {
         id: '7',
