@@ -10,7 +10,7 @@ const NavBar = () => {
     }
 
     return (
-        <MDBNavbar color="black" dark expand="md" scrolling fixed="top">
+        <MDBNavbar color="mdb-color darken-3" dark expand="md" scrolling fixed="top">
             <MDBNavbarBrand>
                 <h1
                     className="nav-logo"

@@ -6,7 +6,6 @@ import { Link } from "react-scroll";
 const Introduction = () => {
     return (
         <div className="introduction">
-            <div className="introduction-background"></div>
             <div className ="introduction-content">
                 <div className="flex-column-center">
                     <h1>Hi, my name is <span className="name-text">SiewLa</span>.</h1>

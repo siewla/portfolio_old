@@ -11,10 +11,6 @@
   font-family: 'Titillium Web', sans-serif;
 }
 
-body{
-  background-color:black;
-}
-
 .nav-item {
   margin: 0 1vh;
   color: white;
@@ -40,18 +36,6 @@ body{
 
 .introduction{
   height: 100vh;
-  color: white;
-}
-
-.introduction-background {
-  background-image: url('https://image.freepik.com/free-photo/office-black-stone-desk-table-with-calculator-laptop-pen-business-background-concept-copy_34435-1508.jpg');  
-  background-repeat: no-repeat; 
-  background-size: cover; 
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  filter:blur(1px);
 }
 
 .name-text{
@@ -78,7 +62,6 @@ body{
 .typewriter-container{
   margin: 5vh 0;
   padding: 2vh;
-  background-color: black;
 }
 
 
