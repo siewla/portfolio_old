@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import { Link, animateScroll as scroll } from "react-scroll";
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse } from "mdbreact";
+import { MDBNavbar, MDBBtn, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse } from "mdbreact";
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
-const NavBar = () => {
+const NavBar = (props) => {
     const [isOpen, setIsOpen] = useState(false)  
     
     const toggleCollapse = () => {
@@ -10,12 +11,14 @@ const NavBar = () => {
     }
 
     return (
-        <MDBNavbar color="mdb-color darken-3" dark expand="md" scrolling fixed="top">
+        <MDBNavbar color="black" dark expand="md" scrolling fixed="top">
             <MDBNavbarBrand>
-                <h1
-                    className="nav-logo"
-                    onClick={()=>{scroll.scrollToTop()}}
-                >SL</h1>
+                <DarkModeSwitch
+                    checked={props.theme}
+                    onChange={props.toggleTheme}
+                    sunColor={'yellow'}
+                    size={60}
+                />
             </MDBNavbarBrand>
             <MDBNavbarToggler onClick={toggleCollapse} />
             <MDBCollapse id="navbarCollapse3" isOpen={isOpen} navbar>
@@ -50,6 +53,16 @@ const NavBar = () => {
                             to="section3"
                             spy={true}
                             smooth={true}
+                            duration={500}
+                        >Expertise</Link>
+                    </MDBNavItem>
+                    <MDBNavItem>
+                        <Link
+                            className="nav-item"
+                            activeClass="active"
+                            to="section4"
+                            spy={true}
+                            smooth={true}
                             offset={-80}
                             duration={500}
                         >Projects</Link>
@@ -58,7 +71,7 @@ const NavBar = () => {
                         <Link
                             className="nav-item"
                             activeClass="active"
-                            to="section4"
+                            to="section5"
                             spy={true}
                             smooth={true}
                             duration={500}

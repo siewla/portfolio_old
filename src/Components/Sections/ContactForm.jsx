@@ -19,7 +19,7 @@ const ContactForm = () => {
         <MDBContainer>
             <MDBRow>
                 <MDBCol md="6">
-                <MDBCard>
+                <MDBCard className="contact-form-container">
                     <MDBCardBody>
                     <form onSubmit={sendEmail}>
                         <div className="grey-text">

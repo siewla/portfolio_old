@@ -1,11 +1,11 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
-import PROJECTS from './ProjectDetails.js'
+import PROJECTS from './ProjectsDetails.js'
 
 const Projects = () => {
     return (
         <div className="projects">
-            <h1>Projects</h1>
+            <h1>My Notable Projects</h1>
             <div className="all-projects-container">
                 {PROJECTS.map(project =>{
                     return(<ProjectCard 

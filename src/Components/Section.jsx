@@ -3,6 +3,7 @@ import Introduction from './Sections/Introduction'
 import About from './Sections/About'
 import Projects from './Sections/Projects'
 import Contact from './Sections/Contact'
+import Expertise from './Sections/Expertise'
 
 
 const Section = (props) => {
@@ -10,8 +11,9 @@ const Section = (props) => {
         switch(props.id){
             case "section1" : return <Introduction />
             case "section2" : return <About />
-            case "section3" : return <Projects />
-            case "section4" : return <Contact />
+            case "section3" : return <Expertise />
+            case "section4" : return <Projects />
+            case "section5" : return <Contact />
     
             default:
                 return(

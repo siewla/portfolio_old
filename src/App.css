@@ -13,7 +13,6 @@
 
 .nav-item {
   margin: 0 1vh;
-  color: white;
   font-size: 3vh;
 }
 
@@ -22,7 +21,6 @@
 }
 
 .nav-logo {
-  color: white;
   font-size: 5vh
 }
 
@@ -66,14 +64,12 @@
 
 
 .Typewriter__wrapper{
-  
   color:palevioletred;
   font-size: 5vh;
   font-family: 'Special Elite', cursive;
 }
 
 .Typewriter__cursor{
-  color: white;
   font-size: 5vh;
 }
 
@@ -87,24 +83,29 @@
 }
 
 .about{
-  background-color:white;
-  color: black;
   min-height: 100vh;
 }
 
 .about-description{
   font-size: 3vh;
   text-align: center;
-  color:rgba(0, 0, 0, 0.8);
+  width: 50vh;
 }
+
+.expertise{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
 
 .projects{
   display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: whitesmoke;
-  color: black;
   min-height: 100vh;
 }
 
@@ -116,24 +117,18 @@
 }
 
 .project-card{
-  width: 45vh;
-  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color: white;
-  border: 1vh solid black;
-  color:black;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 2vh;
   margin: 2vh;
 }
 
 .project-card-title{
   text-decoration:none;
-  color:black;
   font-size: 4vh;
+  color: palevioletred;
 }
 
 .project-card-title:hover{
@@ -141,7 +136,6 @@
 }
 
 .project-description{
-  color:rgba(0, 0, 0, 0.8);
   font-size: 2vh;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   padding: 1vh;
@@ -150,68 +144,42 @@
   text-justify: auto;
 }
 
-.horizontal-line{
-  height: 0.2vh;
-  width: 80%;
-  background-color: grey;
-
-}
-
 .project-card-image{
-  border: 1px dotted grey;
   width: 40vh;
   height: 30vh; 
   object-fit: cover;
   /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
-.project-card-actions{
-  padding: 1vh;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.footer-text{
-  text-decoration:none;
-  color:black;
-}
-
-.footer-text:hover{
-  text-decoration:underline;
-  color:palevioletred;
-}
 
 .contact{
-  background-color: white;
-  color: black;
   min-height: 100vh;
 }
 
+.contact-form-container{
+  width: 40vh;
+}
+
 .connect-with-me-container{
-  width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
-.vertical-line{
-  width: .5vh;
-  height: 40vh;
-  background-color:gray;
-}
 
 .contact-container{
   display: flex;
   justify-content: space-evenly;
   padding: 2vh; 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color:white;
+  margin:2vh;
 }
 
 .contact-icon{
-  color: black;
   font-size: 4vh;
   margin: 2vh;
+  color:black;
 }
 
 .contact-icon:hover{
@@ -226,12 +194,6 @@
 
   .Typewriter__wrapper{
     font-size: 3vh;
-  }
-
-
-  .introduction-background {
-    background-image: none;
-    background-color: black;
   }
 
   .connect-with-me-container{
