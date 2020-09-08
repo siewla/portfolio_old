@@ -42,7 +42,7 @@ const SKILLS =[
     {
         id: '9',
         name: 'PostgreSQL',
-        logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/postgres.png?raw=true'
+        logoLink: 'https://github.com/siewla/portfolio/blob/master/src/assets/postgres.jpg?raw=true'
     }
 ]
 
