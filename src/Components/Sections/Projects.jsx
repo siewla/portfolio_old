@@ -15,6 +15,8 @@ const Projects = () => {
                         projectImgLink={project.projectImgLink}
                         projectDemoLink ={project.projectDemoLink}
                         projectCodeLink ={project.projectCodeLink}
+                        projectStack ={project.projectStack}
+                        projectCollaborators={project.collaborators}
                     />)
                 })}
             </div>

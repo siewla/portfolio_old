@@ -8,6 +8,8 @@ const ProjectCard = (props) => {
     const projectImgLink = props.projectImgLink
     const projectDemoLink = props.projectDemoLink
     const projectCodeLink = props.projectCodeLink
+    const projectStack = props.projectStack
+    const projectCollaborators = props.projectCollaborators
 
     const [modalIsOpen, setModalIsOpen] = useState(false)
 
@@ -22,7 +24,12 @@ const ProjectCard = (props) => {
                 {projectTitle}
                 </MDBModalHeader>
                 <MDBModalBody>
-                    <h4 className="project-description">{projectDescription}</h4>
+                    <h4>Description: <strong>{projectDescription}</strong></h4>
+                    <h4>Stack: <strong>{projectStack}</strong></h4>
+                    {projectCollaborators!==null &&
+                        <h4>Collaborator: <a href={projectCollaborators.link}>
+                        <strong>{projectCollaborators.name}</strong></a></h4>
+                    }
                 </MDBModalBody>
                 <MDBModalFooter className="d-flex justify-content-center">
                 <a href={projectDemoLink} target="popout"><MDBBtn outline color="info">Launch Demo</MDBBtn></a>
