@@ -224,8 +224,8 @@
 .contact{
   min-height: 200vh;
   display:flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: space-around;
 }
 
 .contact-form-container{
@@ -289,6 +289,12 @@
     max-width: 20vh;
     margin: 3vh;
     object-fit: contain;
+  }
+
+  .contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   
   
