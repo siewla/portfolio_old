@@ -15,12 +15,16 @@ const ContactForm = () => {
         });
     }
 
+    const urlencodedtext = `Hi`
+    const whatsAppURL = `https://wa.me/${process.env.REACT_APP_WHATSAPP_NUMBER}?text=${urlencodedtext}`
+
     return (
         <MDBContainer>
             <MDBRow>
                 <MDBCol md="6">
                 <MDBCard className="contact-form-container">
                     <MDBCardBody>
+                    <h3 className="grey-text">Email Me</h3>
                     <form onSubmit={sendEmail}>
                         <div className="grey-text">
                         <MDBInput
@@ -61,6 +65,14 @@ const ContactForm = () => {
                             </MDBBtn>
                         </div>
                     </form>
+                    <hr>
+                    </hr>
+                    <div className="grey-text flex-column-center">
+                        <h3>or</h3>
+                        <br></br>
+                        <h3>DM Me via <a href={whatsAppURL} target="popup"><h1 className="fab fa-whatsapp-square green-text"></h1></a></h3>
+                    </div>
+                    
                     </MDBCardBody>
                 </MDBCard>
                 </MDBCol>
