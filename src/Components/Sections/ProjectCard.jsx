@@ -25,7 +25,7 @@ const ProjectCard = (props) => {
                     <h4 className="project-text">Stack: <span className="grey-text">{projectStack}</span></h4>
                     <br></br>
                     {projectCollaborators!==null &&
-                        <h4>Collaborator: <a href={projectCollaborators.link}>
+                        <h4 className="project-text">Collaborator: <a href={projectCollaborators.link}>
                         <span className="grey-text">{projectCollaborators.name}</span></a></h4>
                     }
                     <br></br>
