@@ -161,7 +161,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding-bottom: 50vh;
+  padding-bottom: 20vh;
 }
 
 .all-projects-container{
@@ -222,10 +222,12 @@
 
 
 .contact{
-  min-height: 200vh;
+  min-height: 100vh;
   display:flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 50vh;
 }
 
 .contact-form-container{
