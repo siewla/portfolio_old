@@ -16,7 +16,6 @@
 }
 
 .nav-item {
-  margin: 0 1vh;
   font-size: 3vh;
   text-transform: uppercase;
   font-weight: 400;
@@ -54,7 +53,6 @@
 
 .introduction-content{
   height: 100%;
-  margin-top:80px;
   display:flex;
   flex-direction: column;
   justify-content: space-around;
@@ -68,6 +66,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .typewriter-container{
   margin: 5vh 0;
   padding: 2vh;
@@ -133,7 +132,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: 1vh solid yellow;
   border-radius: 50%;
-
 }
 
 .expertise{
@@ -163,6 +161,7 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  padding-bottom: 50vh;
 }
 
 .all-projects-container{
@@ -202,21 +201,16 @@
 .project-card-title{
   text-decoration:none;
   font-size: 4vh;
-  font-weight: 400;
+  font-weight: 600;
   color: red;
+}
+
+.project-text{
+  font-size: 3vh;
 }
 
 .project-card-title:hover{
   color: lightseagreen;
-}
-
-.project-description{
-  font-size: 2vh;
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-  padding: 1vh;
-  margin-top: 1vh;
-  text-align: center;
-  text-justify: auto;
 }
 
 .project-card-image{
@@ -228,15 +222,15 @@
 
 
 .contact{
-  min-height: 100vh;
+  min-height: 200vh;
   display:flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
 }
 
 .contact-form-container{
   width: 40vh;
+  margin: 2vh;
 }
 
 .contact-icon{
@@ -253,10 +247,6 @@
   .nav-item {
     margin-left: 1vh;
     font-size: 2vh;
-  }
-
-  .Typewriter__wrapper{
-    font-size: 3vh;
   }
 
   .connect-with-me-container{
@@ -287,12 +277,20 @@
   }
 
   .project-card{
-    flex-direction: column;
+    width:80%;
   }
   
   .project-left-section, .project-middle-section, .project-right-section{
     width: 90%;
   }
+
+  .skill-image{
+    max-height: 15vh;
+    max-width: 20vh;
+    margin: 3vh;
+    object-fit: contain;
+  }
+  
   
   
 }

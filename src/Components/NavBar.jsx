@@ -20,7 +20,7 @@ const NavBar = (props) => {
                     checked={props.theme}
                     onChange={props.toggleTheme}
                     sunColor={'yellow'}
-                    size={60}
+                    size={40}
                 />
             </MDBNavbarBrand>
             <MDBNavbarToggler onClick={toggleCollapse} />
@@ -33,7 +33,6 @@ const NavBar = (props) => {
                             to="section1"
                             spy={true}
                             smooth={true}
-                            offset={-100}
                             duration={500}
                         >Home</Link>
                     </MDBNavItem>

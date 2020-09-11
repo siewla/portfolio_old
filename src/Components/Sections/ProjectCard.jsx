@@ -20,9 +20,9 @@ const ProjectCard = (props) => {
                 <img className="project-card-image" src={projectImgLink} alt="project" />
             </div>
             <div className="project-right-section">
-                    <h4>Description: <span className="grey-text">{projectDescription}</span></h4>
+                    <h4 className="project-text">Description: <span className="grey-text">{projectDescription}</span></h4>
                     <br></br>
-                    <h4>Stack: <span className="grey-text">{projectStack}</span></h4>
+                    <h4 className="project-text">Stack: <span className="grey-text">{projectStack}</span></h4>
                     <br></br>
                     {projectCollaborators!==null &&
                         <h4>Collaborator: <a href={projectCollaborators.link}>
