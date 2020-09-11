@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './global';
 import Navbar from './Components/NavBar';
+import Footer from './Components/Footer'
 import Section from "./Components/Section";
 import {MDBBtn} from 'mdbreact';
 
@@ -35,6 +36,7 @@ const App =() => {
           <Section
             id="section5"
           />
+          <Footer/>
         </div>
     </ThemeProvider>
   );

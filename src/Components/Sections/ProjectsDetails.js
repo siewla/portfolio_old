@@ -34,7 +34,7 @@ const  PROJECTS =[
         projectTitle : 'Sweet Accountant',
         projectStack: 'A full Stack application using NERDS (Node, Express, React, Database using SQL) stack',
         projectDescription : 'This app is a financial management app. This app also has charts and graphs which are extremely helpful in visualizing your expenditure against your income.',
-        projectImgLink : 'https://images.unsplash.com/photo-1569144157581-984dea473e3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80',
+        projectImgLink : 'https://github.com/siewla/portfolio/blob/master/src/assets/project4.png?raw=true',
         projectDemoLink : 'https://sweetaccountant.herokuapp.com/',
         collaborators : {name:'Linh Khanh ', link:'https://github.com/linhkhanh/'}
     },

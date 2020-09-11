@@ -33,7 +33,7 @@ const NavBar = (props) => {
                             to="section1"
                             spy={true}
                             smooth={true}
-                            offset={-80}
+                            offset={-100}
                             duration={500}
                         >Home</Link>
                     </MDBNavItem>
@@ -44,6 +44,7 @@ const NavBar = (props) => {
                             to="section2"
                             spy={true}
                             smooth={true}
+                            offset={-100}
                             duration={500}
                         >About</Link>
                     </MDBNavItem>
@@ -54,7 +55,7 @@ const NavBar = (props) => {
                             to="section3"
                             spy={true}
                             smooth={true}
-                            offset={-80}
+                            offset={-100}
                             duration={500}
                         >Expertise</Link>
                     </MDBNavItem>
@@ -65,7 +66,7 @@ const NavBar = (props) => {
                             to="section4"
                             spy={true}
                             smooth={true}
-                            offset={-80}
+                            offset={-100}
                             duration={500}
                         >Projects</Link>
                     </MDBNavItem>
@@ -76,12 +77,13 @@ const NavBar = (props) => {
                             to="section5"
                             spy={true}
                             smooth={true}
+                            offset={-100}
                             duration={500}
                         >Contact</Link>
                     </MDBNavItem>
                 </MDBNavbarNav>
                 <MDBNavbarNav right>
-                <a href={whatsAppURL} target="popup"><i className="fab fa-whatsapp-square contact-icon"></i></a>
+                    <a href={whatsAppURL} target="popup"><i className="fab fa-whatsapp-square contact-icon"></i></a>
                     <a href="https://github.com/siewla" target="popup"><i className="fab fa-github contact-icon"></i></a>
                     <a href="https://www.linkedin.com/in/siewlapang/" target="popup"><i className="fab fa-linkedin contact-icon"></i></a>
                 </MDBNavbarNav>

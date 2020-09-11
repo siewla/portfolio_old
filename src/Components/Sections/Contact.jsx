@@ -6,12 +6,11 @@ const Contact = () => {
     const whatsAppURL = `https://wa.me/${process.env.REACT_APP_WHATSAPP_NUMBER}?text=${urlencodedtext}`
     console.log(whatsAppURL) 
     return (
-        <div className="flex-column-center contact">
-            <h1>Connect with Me</h1>
-            <div className="connect-with-me-container">
+        <div className="contact">
+            <div className="section-title">Connect with Me</div>
+            <div>
                 <ContactForm />
-            </div>
-            
+            </div>   
         </div>
     )
 }

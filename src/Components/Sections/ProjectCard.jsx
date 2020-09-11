@@ -15,27 +15,25 @@ const ProjectCard = (props) => {
 
     return (
         <div className="project-card">
-            {/* <iframe className="project-card-image" src={projectDemoLink} title="app"></iframe> */}
-            <img className="project-card-image" src={projectImgLink} alt="project" />
-            <a href={projectDemoLink} className="project-card-title" target="popout">{projectTitle}</a> 
-            <MDBBtn color="info" onClick={()=>setModalIsOpen(!modalIsOpen)}>Project Details</MDBBtn>
-            <MDBModal className="black-text" isOpen={modalIsOpen} toggle={()=>setModalIsOpen(!modalIsOpen)}>
-                <MDBModalHeader toggle={()=>setModalIsOpen(!modalIsOpen)}>
-                {projectTitle}
-                </MDBModalHeader>
-                <MDBModalBody>
-                    <h4>Description: <strong>{projectDescription}</strong></h4>
-                    <h4>Stack: <strong>{projectStack}</strong></h4>
+            <div className="project-left-section">
+                <a href={projectDemoLink} className="project-card-title" target="popout">{projectTitle}</a> 
+                <img className="project-card-image" src={projectImgLink} alt="project" />
+            </div>
+            <div className="project-right-section">
+                    <h4>Description: <span className="grey-text">{projectDescription}</span></h4>
+                    <br></br>
+                    <h4>Stack: <span className="grey-text">{projectStack}</span></h4>
+                    <br></br>
                     {projectCollaborators!==null &&
                         <h4>Collaborator: <a href={projectCollaborators.link}>
-                        <strong>{projectCollaborators.name}</strong></a></h4>
+                        <span className="grey-text">{projectCollaborators.name}</span></a></h4>
                     }
-                </MDBModalBody>
-                <MDBModalFooter className="d-flex justify-content-center">
-                <a href={projectDemoLink} target="popout"><MDBBtn outline color="info">Launch Demo</MDBBtn></a>
-                <a href={projectCodeLink} target="popout"><MDBBtn outline color="default">View Code</MDBBtn></a>
-                </MDBModalFooter>
-            </MDBModal>
+                    <br></br>
+                <div className="project-right-section-footer">
+                    <a href={projectDemoLink} target="popout"><i className="fas fa-external-link-alt contact-icon"></i></a>
+                    <a href={projectCodeLink} target="popout"><i className="fab fa-github contact-icon"></i></a>
+                </div>
+            </div>
         </div>
     )
 }

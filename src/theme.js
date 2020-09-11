@@ -1,11 +1,11 @@
 export const lightTheme = {
     body: 'white',
     text: 'black',
-    navTitle: 'white',
+    navTitle: 'red',
 }
 
 export const darkTheme = {
     body: '#151515',
     text: 'white',
-    navTitle: 'yellow'
+    navTitle: 'red'
 }
