@@ -241,9 +241,37 @@
   color: white;
 }
 
+.link-icon{
+  font-size: 4vh;
+  margin: 2vh;
+}
+
+.project-right-section-footer{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .contact-icon:hover{
   color: lightseagreen;
 }
+
+.link-icon .tooltip-text{
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 1vh;
+  border-radius: 6px;
+  font-size: 2vh;
+
+  position: absolute;
+  z-index: 1;
+}
+
+.link-icon:hover .tooltip-text{
+  visibility: visible;
+}
+
 
 @media only screen and (max-width: 600px) {
   .nav-item {

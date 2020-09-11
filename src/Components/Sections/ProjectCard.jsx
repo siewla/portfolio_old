@@ -25,14 +25,14 @@ const ProjectCard = (props) => {
                     <h4 className="project-text">Stack: <span className="grey-text">{projectStack}</span></h4>
                     <br></br>
                     {projectCollaborators!==null &&
-                        <h4 className="project-text">Collaborator: <a href={projectCollaborators.link}>
+                        <h4 className="project-text">Collaborator: <a href={projectCollaborators.link} target="popout">
                         <span className="grey-text">{projectCollaborators.name}</span></a></h4>
                     }
                     <br></br>
-                <div className="project-right-section-footer">
-                    <a href={projectDemoLink} target="popout"><i className="fas fa-external-link-alt contact-icon"></i></a>
-                    <a href={projectCodeLink} target="popout"><i className="fab fa-github contact-icon"></i></a>
-                </div>
+                    <div className="project-right-section-footer">
+                        <a href={projectDemoLink} target="popout" className="link-icon"><i className="fas fa-eye"></i><span className="tooltip-text">Launch Demo</span></a>
+                        <a href={projectCodeLink} target="popout" className="link-icon"><i className="fab fa-github"></i><span className="tooltip-text">View Code</span></a>
+                    </div>
             </div>
         </div>
     )

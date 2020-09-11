@@ -8,4 +8,7 @@ export const GlobalStyles = createGlobalStyle`
 .nav-item{
     color: ${({ theme }) => theme.navTitle};
 }
+.link-icon{
+    color: ${({ theme }) => theme.text}
+}
 `
