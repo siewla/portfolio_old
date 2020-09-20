@@ -15,7 +15,7 @@ const About = () => {
                         <li>USA 🇺🇸 study</li>
                         <li>New Zealand 🇳🇿 working holiday</li> */}
                 </div>
-                <a href="/https://github.com/siewla/portfolio/blob/master/public/resume.pdf" target="_blank" rel="noopener noreferrer" download>
+                <a href="https://github.com/siewla/portfolio/blob/master/public/resume.pdf" target="_blank" rel="noopener noreferrer" download>
                 <MDBBtn color="black" type="submit">
                     Download My Resume <i className="fas fa-download"/>
                 </MDBBtn> 
